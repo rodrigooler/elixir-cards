@@ -10,4 +10,8 @@ defmodule Cards do
   def sort_deck do
     Enum.sort(create_deck())
   end
+
+  def contains?(deck, card) do
+    Enum.member?(deck, card)
+  end
 end
